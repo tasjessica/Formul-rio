@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="/form.css">
+        <title>Seleção Fisioterapêutas - CAU</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho título e subtítulo -->
+        <div>
+            <h1 id="titulo">Seleção de Fisioterapêutas - Caruaru</h1>
+            <p id="subtitulo">Seleção feita sob avaliação currirular.</p>
+            <br>
+            <br>
+            <br>
+            
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo de área de atuação com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Qual a sua área de atuação?</strong></label>
+                <label>
+                    <input type="radio" name="fisiocau" value="atencaobasica">Atenção Basica
+                </label>
+                <label>
+                    <input type="radio" name="fisiocau" value="saudedamulher">Saúde da Mulher
+                </label>
+                <label>
+                    <input type="radio" name="fisiocau" value="cuidadospaliativos">Cuidados Paliativos
+                </label>
+            </div>
+
+            <!-- Campo de experiência com 3 opções para escolha (select option) e css de classe "campo" -->
+            <div class="campo">
+                <label for="experiencia"><strong>Experiência</strong></label>
+                <select id="experiencia" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>1 ano</option>
+                  <option>2 anos</option>
+                  <option>Sem experiência</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de disponibilidade de horário para 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>Selecione sua disponibilidade de horário:</strong></label><br><br>
+                    <input type="checkbox" id="disponibilidade1" name="disponibilidade1" value="manha">
+                    <label for="disponibilidade1"> Manhã</label>
+                    <input type="checkbox" id="disponibilidade2" name="disponibilidade2" value="tarde">
+                    <label for="disponibilidade2"> Tarde</label>
+                    <input type="checkbox" id="disponibilidade3" name="disponibilidade3" value="integral">
+                    <label for="disponibilidade3"> Integral</label>
+                </div>
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="curriculo"><strong>Envie seu currículo: </strong></label>
+                <input class="curriculo" type="file" name="arquivos">
+                <br>
+                
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
